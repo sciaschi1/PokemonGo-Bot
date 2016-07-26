@@ -180,15 +180,15 @@ To update your project do: `git pull` in the project folder
 	2/ Edit `config.json` and replace `auth_service`, `username`, `password`, `location` and `gmapkey` with your parameters (other keys are optional, check `Advance Configuration` below)
 
 ## Advance Configuration
-- `max_steps` :
-- `mode` :
-- `walk` :
+- `max_steps` : Set the steps around your initial location (DEFAULT 5 mean 25 cells around your location)
+- `mode` : 
+- `walk` :  Set walking speed (in meters per second)
 - `debug` : Let the default value here except if you are developper
 - `test` : Let the default value here except if you are developper
 - `initial_transfer` : Set this to 1 if you want to transfer pokemon
-- `location_cache` : 
-- `distance_unit` :
-- `item_filter` :
+- `location_cache` : Bot will start at last known location (True or False)
+- `distance_unit` : Set the unit to display distance in (e.g, km for kilometers, mi for miles, ft for feet)
+- `item_filter` : Pass a list of unwanted items to recycle when collected at a Pokestop (e.g, \"101,102,103,104\" to recycle potions 			  when collected)
 - `evolve_all` : Set to true to evolve pokemons if possible
 
 ### Evolve All Configuration
